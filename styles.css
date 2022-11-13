@@ -17,7 +17,18 @@ nav {
   justify-content: space-between;
   padding: 0 24px;
   border-bottom: 1px solid var(--very-light-pink);
+  position: sticky;
 }
+
+.main-image-container {
+  height: 800px;
+  background-color: #000000;
+}
+.main-image-container img {
+  height: 800px;
+  width: 100%;
+}
+
 .inactive {
   display: none;
 }
@@ -169,6 +180,7 @@ nav {
   box-sizing: border-box;
   position: absolute;
   right: 0;
+  top: 60px;
 }
 .title-container {
   display: flex;
@@ -253,6 +265,7 @@ nav {
   border-radius: 20px;
   object-fit: cover;
 }
+
 .product-info {
   display: flex;
   justify-content: space-between;
@@ -285,6 +298,7 @@ nav {
   position: absolute;
   right: 0;
   top: 61px;
+  border-radius: 50px;
 }
 .product-detail-close {
   background: var(--white);
@@ -369,4 +383,72 @@ nav {
   .mobile-menu {
     display: none;
   }
+}
+.hero {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(https://images.pexels.com/photos/135620/pexels-photo-135620.jpeg?cs=srgb&dl=pexels-shattha-pilabut-135620.jpg&fm=jpg&_gl=1*9zuugo*_ga*MTg4Mzg5MzcwNy4xNjYzNTI0OTMx*_ga_8JE65Q40S6*MTY2ODM2ODU2OC4xMS4xLjE2NjgzNjkyNzguMC4wLjA.);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  font-size: 4em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #ffffff;
+}
+
+.hero h2 {
+  color: white;
+}
+.hero button {
+  display: block;
+  width: 200px;
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid white;
+  border-radius: 20px;
+}
+
+.popup-button {
+  display: absolute;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 22px;
+  margin: 10px;
+  padding: 1em 3em;
+  background-size: 300% 300%;
+  color: white;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+  background-image: linear-gradient(
+    to right,
+    #895cf2 0%,
+    #ffabf4 50%,
+    #895cf2 100%
+  );
+  transition: 0.5s;
+}
+
+.popup-button:hover {
+  background-position: right center;
+}
+
+.hero a {
+  width: 100px;
+
+  content: center;
 }
