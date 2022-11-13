@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+.hero {
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero .btn {
+  /* Positioning and sizing */
+  display: block;
+  width: 200px;
+
+  /* Border styles */
+  border: 3px solid black;
+}
+.hero-inner h1 {
+  color: white;
+}
